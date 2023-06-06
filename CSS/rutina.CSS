@@ -1,0 +1,81 @@
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #A63C3C;
+}
+.hh1{
+    text-align: center;
+    font-size: 6em;
+    color:aliceblue;
+    font-family: 'Anton', sans-serif;
+}
+.container{
+    display: grid;
+    background-image: url("../Imagenes/FONDO.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    grid-template-columns:repeat(3,2fr);
+    grid-template-rows:270px;
+    color:white;
+    grid-template-areas: 
+    "1mg  pierna pierna  "
+    "2mg  brazo brazo  "
+    "3mg  abdomen abdomen "
+    "4mg espalda espalda "
+    "5mg gluteo gluteo "
+    ;
+    gap: 10px;
+}
+.item{
+    padding:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    font-weight:bold;
+  }
+.item-1{
+    grid-area: 1mg ;
+    background-image: url("../Imagenes/RUTINA.jpg");
+}
+.item-2{
+    grid-area: pierna;
+}
+.item-3{
+    grid-area: 2mg ;
+    background-image: url("../Imagenes/BRAZO.jpg");
+    background-repeat: no-repeat;
+}
+.item-4{
+    grid-area: brazo;
+
+}
+.item-5{
+    grid-area: 3mg ;
+    background-image: url("../Imagenes/abdomen2.jpg");
+    background-repeat: no-repeat;
+}
+.item-6{
+    grid-area: abdomen;
+}
+.item-7{
+    grid-area: 4mg ;
+    background-image: url("../Imagenes/ESPALDA1.png");
+    background-repeat: no-repeat;
+}
+.item-8{
+    grid-area: espalda;
+}
+.item-9{
+    grid-area: 5mg ;
+    background-image: url("../Imagenes/RUTINA3.jpg");
+    background-repeat: no-repeat;
+}
+.item-10{
+    grid-area: gluteo;
+}
